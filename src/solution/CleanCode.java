@@ -26,8 +26,8 @@ public class CleanCode {
 		int[] e = {2,4,8,4,24,10};
 		int[] f = {2,4,8,6,3,22};
 		
-		System.out.println(findEvens(e)); //changed method name
-		System.out.println(findEvens(f)); //changed method name
+		System.out.println(findIfEvens(e)); //changed method name
+		System.out.println(findIfEvens(f)); //changed method name
 		System.out.println();
 		
 		
@@ -101,7 +101,7 @@ public class CleanCode {
 	
 	//changed method name to be more descriptive and added some spaces
 	// fixed if statement to be less convoluted
-	public static boolean findEvens(int[] x) {
+	public static boolean findIfEvens(int[] x) {
 		for(int i = 0; i < x.length; i++) {
 			if(x[i] % 2 != 0) {
 				return false;
