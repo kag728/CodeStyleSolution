@@ -148,10 +148,9 @@ public class CleanCode {
 		return (x > 0 && x < 10); 
 	}
 	
-	// don't need to return true, just return statement
+	// for each loop instead of for loop because indices don't matter
 	public static boolean contains(String s) {
-		char[] w = s.toCharArray();
-		for(int i = 0; i < w.length; i++) {
+		for(char w: s.toCharArray()) {
 		    if (w[i] == 'a' || w[i] == 'e' || w[i] == 'i' || w[i] == 'o' || w[i] == 'u'){
 			    return true;
 		    }
