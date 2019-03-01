@@ -152,7 +152,9 @@ public class CleanCode {
 	public static boolean contains(String s) {
 		char[] w = s.toCharArray();
 		for(int i = 0; i < w.length; i++) {
-			return (w[i] == 'a' || w[i] == 'e' || w[i] == 'i' || w[i] == 'o' || w[i] == 'u'); 
+		    if (w[i] == 'a' || w[i] == 'e' || w[i] == 'i' || w[i] == 'o' || w[i] == 'u'){
+			    return true;
+		    }
 		}
 		return false;
 	}
